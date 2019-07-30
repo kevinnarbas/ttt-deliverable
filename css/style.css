@@ -1,0 +1,45 @@
+/* css file */
+
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+  /* background: url(https://i.imgur.com/NXueepJt.png); */
+  /* background-size: auto; */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Lemon', cursive;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: 'Lemon', cursive;
+  margin-top: 0px;
+}
+
+section.board {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 10vmin);
+  grid-template-rows: repeat(3, 10vmin);
+  grid-gap: .5vmin;
+}
+  
+section.board div {
+  border-radius: 25%;
+  border: 2px dashed black;
+  }
+
+button {
+  margin: 5px;
+}
